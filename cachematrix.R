@@ -39,3 +39,31 @@ my_matrix$get()
 my_matrix$getinverse()
 cacheSolve(my_matrix)
 my_matrix$getinverse()
+
+
+Sample:
+  
+  > my_matrix$get()
+[,1] [,2]
+[1,]    5    8
+[2,]    6   10
+
+> my_matrix$getinverse()
+NULL
+
+> cacheSolve(my_matrix)
+[,1] [,2]
+[1,]    5 -4.0
+[2,]   -3  2.5
+
+> cacheSolve(my_matrix)
+getting cached data
+[,1] [,2]
+[1,]    5 -4.0
+[2,]   -3  2.5
+
+> my_matrix$getinverse()
+[,1] [,2]
+[1,]    5 -4.0
+[2,]   -3  2.5
+> 
